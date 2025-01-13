@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<TabPane xmlns:fx="http://javafx.com/fxml"
+         fx:controller="com.example.orchestrator.MainController">
+
+    <Tab text="Services">
+
+        <VBox spacing="10">
+
+            <HBox spacing="5">
+                <Button text="Scale Up" onAction="#onScaleUp"/>
+                <Button text="Scale Down" onAction="#onScaleDown"/>
+                <Button text="Refresh Table" onAction="#refreshTable"/>
+            </HBox>
+
+            <TableView fx:id="servicesTable" prefHeight="400" prefWidth="800"/>
+        </VBox>
+
+    </Tab>
+
+    <Tab text="AI Control">
+
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <CheckBox fx:id="aiToggle" text="Enable AI" onAction="#onAiToggle"/>
+            <TextArea fx:id="aiLogArea" editable="false" wrapText="true" prefHeight="400" prefWidth="800"/>
+            <Button text="Clear Log" onAction="#onClearLog"/>
+        </VBox>
+
+    </Tab>
+</TabPane>
