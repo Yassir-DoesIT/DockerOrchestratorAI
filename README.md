@@ -15,7 +15,7 @@ This project is a Java-based Docker Swarm orchestration tool designed to manage 
 - **Manual Scaling**: Allows users to manually scale services.
 
 ### Notes
-- The latency and request rate metrics displayed in the application are random placeholders and are not currently implemented. These features may not be developed in the future.
+- The latency and request rate metrics displayed in the application are random placeholders and are not currently implemented.
 - There is a minor bug in the GUI: when selecting a service to scale, the program refreshes the service list every 5 seconds to fetch new metrics. This causes the selected service to be deselected if a refresh occurs during the selection process.
 - To see the AI agent in action, you must artificially induce load on a service (e.g., by using a tool like `stress` or `hey`).
 
